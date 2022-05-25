@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.ical4j</groupId>
+  <artifactId>ical4j-karaf-features</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <packaging>feature</packaging>
+
+  <name>iCal4j - Karaf Features</name>
+  <description>Apache Karaf Features for iCal4j</description>
+
+  <scm>
+    <connection>scm:git:git@github.com:ical4j/ical4j-karaf-features.git</connection>
+    <developerConnection>scm:git:git@github.com:ical4j/ical4j-karaf-features.git</developerConnection>
+    <url>https://github.com/ical4j/ical4j-karaf-features</url>
+  </scm>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.karaf.tooling</groupId>
+        <artifactId>karaf-maven-plugin</artifactId>
+        <version>4.4.0</version>
+        <extensions>true</extensions>
+        <executions>
+          <execution>
+            <id>generate-features-file</id>
+            <goals>
+              <goal>features-generate-descriptor</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <properties>
+    <ical4j.version>3.2.2</ical4j.version>
+    <ical4j-vcard.version>3.2.2</ical4j-vcard.version>
+    <ical4j-serializer.version>3.2.2</ical4j-serializer.version>
+    <ical4j-validator.version>3.2.2</ical4j-validator.version>
+    <ical4j-connector.version>3.2.2</ical4j-connector.version>
+    <ical4j-integration.version>3.2.2</ical4j-integration.version>
+  </properties>
+</project>

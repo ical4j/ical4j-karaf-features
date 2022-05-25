@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="ical4j-${project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.5.0">
+    <feature name="ical4j" version="${project.version}">
+        <bundle>mvn:org.mnode.ical4j/ical4j/${ical4j.version}</bundle>
+    </feature>
+    <feature name="ical4j-vcard" version="${project.version}">
+        <bundle>mvn:org.mnode.ical4j/ical4j-vcard/${ical4j-vcard.version}</bundle>
+        <!-- dependencies -->
+        <feature version="${project.version}">ical4j</feature>
+    </feature>
+    <feature name="ical4j-serializer" version="${project.version}">
+        <bundle>mvn:org.mnode.ical4j/ical4j-serializer/${ical4j-serializer.version}</bundle>
+        <!-- dependencies -->
+        <feature version="${project.version}">ical4j-vcard</feature>
+    </feature>
+    <feature name="ical4j-validator" version="${project.version}">
+        <bundle>mvn:org.mnode.ical4j/ical4j-validator/${ical4j-validator.version}</bundle>
+        <!-- dependencies -->
+        <feature version="${project.version}">ical4j-vcard</feature>
+    </feature>
+    <feature name="ical4j-connector" version="${project.version}">
+        <bundle>mvn:org.mnode.ical4j/ical4j-connector/${ical4j-connector.version}</bundle>
+        <!-- dependencies -->
+        <feature version="${project.version}">ical4j-vcard</feature>
+        <feature version="${project.version}">ical4j-serializer</feature>
+    </feature>
+    <feature name="ical4j-integration" version="${project.version}">
+        <bundle>mvn:org.mnode.ical4j/ical4j-integration/${ical4j-integration.version}</bundle>
+        <!-- dependencies -->
+        <feature version="${project.version}">ical4j-vcard</feature>
+        <feature version="${project.version}">ical4j-serializer</feature>
+    </feature>
+</features>
