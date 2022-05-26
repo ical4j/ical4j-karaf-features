@@ -42,6 +42,8 @@
     <ical4j-vcard.version>3.2.2</ical4j-vcard.version>
     <ical4j-serializer.version>3.2.2</ical4j-serializer.version>
     <ical4j-validator.version>3.2.2</ical4j-validator.version>
+    <ical4j-freebusy.version>3.2.2</ical4j-freebusy.version>
+    <ical4j-query.version>3.2.2</ical4j-query.version>
     <ical4j-connector.version>3.2.2</ical4j-connector.version>
     <ical4j-integration.version>3.2.2</ical4j-integration.version>
   </properties>

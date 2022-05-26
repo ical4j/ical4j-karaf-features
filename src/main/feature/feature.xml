@@ -18,6 +18,16 @@
         <!-- dependencies -->
         <feature version="${project.version}">ical4j-vcard</feature>
     </feature>
+    <feature name="ical4j-freebusy" version="${project.version}">
+        <bundle>mvn:org.mnode.ical4j/ical4j-freebusy/${ical4j-freebusy.version}</bundle>
+        <!-- dependencies -->
+        <feature version="${project.version}">ical4j</feature>
+    </feature>
+    <feature name="ical4j-query" version="${project.version}">
+        <bundle>mvn:org.mnode.ical4j/ical4j-query/${ical4j-query.version}</bundle>
+        <!-- dependencies -->
+        <feature version="${project.version}">ical4j-vcard</feature>
+    </feature>
     <feature name="ical4j-connector" version="${project.version}">
         <bundle>mvn:org.mnode.ical4j/ical4j-connector/${ical4j-connector.version}</bundle>
         <!-- dependencies -->
